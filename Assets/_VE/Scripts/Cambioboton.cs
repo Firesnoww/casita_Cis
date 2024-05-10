@@ -22,29 +22,35 @@ public class Cambioboton : MonoBehaviour
         {
             case 0:
                 botones[0].gameObject.SetActive(true);
+                botones[0].gameObject.GetComponent<Button>().enabled = true;
                 botones[0].position = Posiciones[2].position;
+                botones[1].gameObject.GetComponent<Button>().enabled = false;
                 botones[1].gameObject.SetActive(true);
                 botones[1].position = Posiciones[3].position;
-
                 botones[2].gameObject.SetActive(false);
+                botones[2].position = Posiciones[4].position;
                 botones[3].gameObject.SetActive(false);
+                botones[3].position = Posiciones[4].position;
                 botones[4].gameObject.SetActive(false);
+                botones[4].position = Posiciones[4].position;
 
                 break;
             case 1:
 
 
                 botones[0].gameObject.SetActive(true);
+                botones[0].gameObject.GetComponent<Button>().enabled = false;
                 botones[0].position = Posiciones[1].position;
                 botones[1].gameObject.SetActive(true);
+                botones[1].gameObject.GetComponent<Button>().enabled = true;
                 botones[1].position = Posiciones[2].position;
                 botones[2].gameObject.SetActive(true);
+                botones[2].gameObject.GetComponent<Button>().enabled = false;
                 botones[2].position = Posiciones[3].position;
-
-
-
                 botones[3].gameObject.SetActive(false);
+                botones[3].position = Posiciones[4].position;
                 botones[4].gameObject.SetActive(false);
+                botones[4].position = Posiciones[4].position;
                 break;
 
             case 2:
@@ -52,13 +58,16 @@ public class Cambioboton : MonoBehaviour
                 botones[0].gameObject.SetActive(false);
                 botones[0].position = Posiciones[0].position;
                 botones[1].gameObject.SetActive(true);
+                botones[1].gameObject.GetComponent<Button>().enabled = false;
                 botones[1].position = Posiciones[1].position;
                 botones[2].gameObject.SetActive(true);
+                botones[2].gameObject.GetComponent<Button>().enabled = true;
                 botones[2].position = Posiciones[2].position;
                 botones[3].gameObject.SetActive(true);
+                botones[0].gameObject.GetComponent<Button>().enabled = false;
                 botones[3].position = Posiciones[3].position;
-
                 botones[4].gameObject.SetActive(false);
+                botones[4].position = Posiciones[4].position;
 
                 break;
 
@@ -67,12 +76,15 @@ public class Cambioboton : MonoBehaviour
                 botones[0].gameObject.SetActive(false);
                 botones[0].position = Posiciones[0].position;
                 botones[1].gameObject.SetActive(false);
-                botones[1].position = Posiciones[1].position;
+                botones[1].position = Posiciones[0].position;
                 botones[2].gameObject.SetActive(true);
-                botones[2].position = Posiciones[2].position;
+                botones[2].gameObject.GetComponent<Button>().enabled = false;
+                botones[2].position = Posiciones[1].position;
                 botones[3].gameObject.SetActive(true);
-                botones[3].position = Posiciones[3].position;
+                botones[3].gameObject.GetComponent<Button>().enabled = true;
+                botones[3].position = Posiciones[2].position;
                 botones[4].gameObject.SetActive(true);
+                botones[4].gameObject.GetComponent<Button>().enabled = false;
                 botones[4].position = Posiciones[3].position;
                 break;
 
@@ -80,13 +92,15 @@ public class Cambioboton : MonoBehaviour
                 botones[0].gameObject.SetActive(false);
                 botones[0].position = Posiciones[0].position;
                 botones[1].gameObject.SetActive(false);
-                botones[1].position = Posiciones[1].position;
+                botones[1].position = Posiciones[0].position;
                 botones[2].gameObject.SetActive(false);
-                botones[2].position = Posiciones[2].position;
+                botones[2].position = Posiciones[0].position;
                 botones[3].gameObject.SetActive(true);
-                botones[3].position = Posiciones[3].position;
+                botones[3].gameObject.GetComponent<Button>().enabled = false;
+                botones[3].position = Posiciones[1].position;
                 botones[4].gameObject.SetActive(true);
-                botones[4].position = Posiciones[3].position;
+                botones[4].gameObject.GetComponent<Button>().enabled = true;
+                botones[4].position = Posiciones[2].position;
                 break;
 
             default:
